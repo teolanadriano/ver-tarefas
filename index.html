@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="tela-login">
+            <h2>Verificar Pendências</h2>
+            <p>Digite seu nome exatamente do mesmo jeito que aparece na lista:</p>
+            <input type="text" id="nome-aluno" placeholder="Ex: João Silva">
+            <button onclick="buscarTrabalhos()">Ver Trabalhos</button>
+        </div>
+
+        <div id="tela-resultado" class="hidden">
+            <h2><span id="nome-exibido"></span></h2>
+            <p>Suas pendências:</p>
+            <p>Clique nos links abaixo para baixar/visualizar</p>
+            <div id="lista-trabalhos"></div>
+            <button onclick="voltar()">Voltar</button>
+        </div>
+
+        <div class="lista-alunos">
+            <div class="lista-header">
+                <h3>Lista de nomes</h3>
+            </div>
+            <ul>
+                <li>ALICE EMANUELLA</li>
+                <li>ALICE MARIA</li>
+                <li>ANA KARLA</li>
+                <li>ANTONIO JOSE</li>
+                <li>CARLOS GABRIEL</li>
+                <li>CLAYTON ERICK</li>
+                <li>DIEGO DA SILVA</li>
+                <li>ENIO GABRIEL</li>
+                <li>ENZO RAPHAEL</li>
+                <li>FELIPE BRANDAO</li>
+                <li>FRANCISCO CARICIOL</li>
+                <li>GABRIEL DA CRUZ</li>
+                <li>GABRIEL RODRIGUES</li>
+                <li>GUILHERME VILARINHO</li>
+                <li>ISAIAS OLIVEIRA</li>
+                <li>JOAO HEMANUEL</li>
+                <li>JOAO PEDRO</li>
+                <li>JOSE HENRIQUE</li>
+                <li>JOSE LUCAS</li>
+                <li>JOSEILSON BARCELAR</li>
+                <li>KAILAN ARAUJO</li>
+                <li>LARISSA MAIRA</li>
+                <li>LUIS EDUARDO</li>
+                <li>LUIZ AUGUSTO</li>
+                <li>MAITE GOMES</li>
+                <li>MARIA CLARA</li>
+                <li>MARIA EDUARDA</li>
+                <li>MARIA EVELLYN</li>
+                <li>MATEUS JOSE</li>
+                <li>MAYCON WESLLY</li>
+                <li>RIQUELME MENDES</li>
+                <li>TIAGO DA CRUZ</li>
+                <li>WELSON FAGNER</li>
+                <li>YASMIM RODRIGUES</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
