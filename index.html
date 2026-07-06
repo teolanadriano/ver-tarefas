@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tarefas pendentes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div id="tela-login">
             <h2>Verificar Pendências</h2>
-            <p>Digite seu nome exatamente do mesmo jeito que aparece na lista:</p>
-            <input type="text" id="nome-aluno" placeholder="Ex: João Silva">
-            <button onclick="buscarTrabalhos()">Ver Trabalhos</button>
+            <p>Clique no seu nome na lista abaixo para ver suas pendências:</p>
         </div>
 
         <div id="tela-resultado" class="hidden">
@@ -28,40 +26,40 @@
                 <h3>Lista de nomes</h3>
             </div>
             <ul>
-                <li>ALICE EMANUELLA</li>
-                <li>ALICE MARIA</li>
-                <li>ANA KARLA</li>
-                <li>ANTONIO JOSE</li>
-                <li>CARLOS GABRIEL</li>
-                <li>CLAYTON ERICK</li>
-                <li>DIEGO DA SILVA</li>
-                <li>ENIO GABRIEL</li>
-                <li>ENZO RAPHAEL</li>
-                <li>FELIPE BRANDAO</li>
-                <li>FRANCISCO CARICIOL</li>
-                <li>GABRIEL DA CRUZ</li>
-                <li>GABRIEL RODRIGUES</li>
-                <li>GUILHERME VILARINHO</li>
-                <li>ISAIAS OLIVEIRA</li>
-                <li>JOAO HEMANUEL</li>
-                <li>JOAO PEDRO</li>
-                <li>JOSE HENRIQUE</li>
-                <li>JOSE LUCAS</li>
-                <li>JOSEILSON BARCELAR</li>
-                <li>KAILAN ARAUJO</li>
-                <li>LARISSA MAIRA</li>
-                <li>LUIS EDUARDO</li>
-                <li>LUIZ AUGUSTO</li>
-                <li>MAITE GOMES</li>
-                <li>MARIA CLARA</li>
-                <li>MARIA EDUARDA</li>
-                <li>MARIA EVELLYN</li>
-                <li>MATEUS JOSE</li>
-                <li>MAYCON WESLLY</li>
-                <li>RIQUELME MENDES</li>
-                <li>TIAGO DA CRUZ</li>
-                <li>WELSON FAGNER</li>
-                <li>YASMIM RODRIGUES</li>
+                <li onclick="buscarTrabalhos('ALICE EMANUELLA')">ALICE EMANUELLA</li>
+                <li onclick="buscarTrabalhos('ALICE MARIA')">ALICE MARIA</li>
+                <li onclick="buscarTrabalhos('ANA KARLA')">ANA KARLA</li>
+                <li onclick="buscarTrabalhos('ANTONIO JOSE')">ANTONIO JOSE</li>
+                <li onclick="buscarTrabalhos('CARLOS GABRIEL')">CARLOS GABRIEL</li>
+                <li onclick="buscarTrabalhos('CLAYTON ERICK')">CLAYTON ERICK</li>
+                <li onclick="buscarTrabalhos('DIEGO DA SILVA')">DIEGO DA SILVA</li>
+                <li onclick="buscarTrabalhos('ENIO GABRIEL')">ENIO GABRIEL</li>
+                <li onclick="buscarTrabalhos('ENZO RAPHAEL')">ENZO RAPHAEL</li>
+                <li onclick="buscarTrabalhos('FELIPE BRANDAO')">FELIPE BRANDAO</li>
+                <li onclick="buscarTrabalhos('FRANCISCO CARICIOL')">FRANCISCO CARICIOL</li>
+                <li onclick="buscarTrabalhos('GABRIEL DA CRUZ')">GABRIEL DA CRUZ</li>
+                <li onclick="buscarTrabalhos('GABRIEL RODRIGUES')">GABRIEL RODRIGUES</li>
+                <li onclick="buscarTrabalhos('GUILHERME VILARINHO')">GUILHERME VILARINHO</li>
+                <li onclick="buscarTrabalhos('ISAIAS OLIVEIRA')">ISAIAS OLIVEIRA</li>
+                <li onclick="buscarTrabalhos('JOAO HEMANUEL')">JOAO HEMANUEL</li>
+                <li onclick="buscarTrabalhos('JOAO PEDRO')">JOAO PEDRO</li>
+                <li onclick="buscarTrabalhos('JOSE HENRIQUE')">JOSE HENRIQUE</li>
+                <li onclick="buscarTrabalhos('JOSE LUCAS')">JOSE LUCAS</li>
+                <li onclick="buscarTrabalhos('JOSEILSON BARCELAR')">JOSEILSON BARCELAR</li>
+                <li onclick="buscarTrabalhos('KAILAN ARAUJO')">KAILAN ARAUJO</li>
+                <li onclick="buscarTrabalhos('LARISSA MAIRA')">LARISSA MAIRA</li>
+                <li onclick="buscarTrabalhos('LUIS EDUARDO')">LUIS EDUARDO</li>
+                <li onclick="buscarTrabalhos('LUIZ AUGUSTO')">LUIZ AUGUSTO</li>
+                <li onclick="buscarTrabalhos('MAITE GOMES')">MAITE GOMES</li>
+                <li onclick="buscarTrabalhos('MARIA CLARA')">MARIA CLARA</li>
+                <li onclick="buscarTrabalhos('MARIA EDUARDA')">MARIA EDUARDA</li>
+                <li onclick="buscarTrabalhos('MARIA EVELLYN')">MARIA EVELLYN</li>
+                <li onclick="buscarTrabalhos('MATEUS JOSE')">MATEUS JOSE</li>
+                <li onclick="buscarTrabalhos('MAYCON WESLLY')">MAYCON WESLLY</li>
+                <li onclick="buscarTrabalhos('RIQUELME MENDES')">RIQUELME MENDES</li>
+                <li onclick="buscarTrabalhos('TIAGO DA CRUZ')">TIAGO DA CRUZ</li>
+                <li onclick="buscarTrabalhos('WELSON FAGNER')">WELSON FAGNER</li>
+                <li onclick="buscarTrabalhos('YASMIM RODRIGUES')">YASMIM RODRIGUES</li>
             </ul>
         </div>
     </div>

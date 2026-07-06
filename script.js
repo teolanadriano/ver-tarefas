@@ -43,15 +43,10 @@ const bancoDadosAlunos = {
   "YASMIM RODRIGUES": ["ATIVIDADE_2506", "ATIVIDADE_0307"]
 };
 
-function buscarTrabalhos() {
-    const nomeInput = document.getElementById('nome-aluno').value.trim().toUpperCase();
-    
-    if (nomeInput === "") {
-        alert("Por favor, digite um nome!");
-        return;
-    }
+function buscarTrabalhos(nomeInput) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    document.getElementById('nome-exibido').innerText = document.getElementById('nome-aluno').value;
+    document.getElementById('nome-exibido').innerText = nomeInput;
 
     const listaDiv = document.getElementById('lista-trabalhos');
     listaDiv.innerHTML = "";
@@ -60,7 +55,7 @@ function buscarTrabalhos() {
         const titulosPendentes = bancoDadosAlunos[nomeInput];
 
         if (titulosPendentes.length === 0) {
-            listaDiv.innerHTML = "<p class='no-tasks'>Você não tem trabalhos pendentes.</p>";
+            listaDiv.innerHTML = "<p class='no-tasks'>Você não tem trabalhos pendentes. 🎉</p>";
         } else {
             const ul = document.createElement('ul');
 
@@ -86,7 +81,7 @@ function buscarTrabalhos() {
             listaDiv.appendChild(ul);
         }
     } else {
-        listaDiv.innerHTML = "<p style='color: red;'>Aluno não encontrado. Verifique se digitou o nome completo corretamente.</p>";
+        listaDiv.innerHTML = "<p style='color: red;'>Erro: Aluno não mapeado no banco de dados.</p>";
     }
 
     document.getElementById('tela-login').classList.add('hidden');
@@ -94,7 +89,6 @@ function buscarTrabalhos() {
 }
 
 function voltar() {
-    document.getElementById('nome-aluno').value = "";
     document.getElementById('tela-login').classList.remove('hidden');
     document.getElementById('tela-resultado').classList.add('hidden');
 }
